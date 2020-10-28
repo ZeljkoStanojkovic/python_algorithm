@@ -1,0 +1,45 @@
+import graphClass.CGraph as CGraph
+
+#   FORMAT DATA
+G = CGraph.Graph()
+G.add_vertex('a')
+G.add_vertex('b')
+G.add_vertex('c')
+G.add_vertex('d')
+G.add_vertex('e')
+G.add_vertex('f')
+G.add_vertex('g')
+G.add_vertex('h')
+G.add_vertex('i')
+G.add_vertex('j')
+G.add_vertex_edge('a', 'b', 1)
+G.add_vertex_edge('a', 'e', 2)
+G.add_vertex_edge('b', 'c', 3)
+G.add_vertex_edge('b', 'f', 4)
+G.add_vertex_edge('c', 'd', 5)
+G.add_vertex_edge('d', 'e', 6)
+G.add_vertex_edge('e', 'i', 7)
+G.add_vertex_edge('f', 'g', 8)
+G.add_vertex_edge('f', 'j', 9)
+G.add_vertex_edge('g', 'h', 10)
+
+print(G.get_vertexsCnt())
+print(G.get_vertexs())
+print(G.get_allEdges())
+print(G.get_listEdge())
+print(G.get_vertexNeighborCnt())
+print(G.get_incidentEdges('c'))
+print(G.get_adjacentVertices('c'))
+print(G.get_V2WithEdge(10))
+print(G.get_edgeWithV2('a', 'c'))
+print(G.get_directionEdge(10))
+print(G.inDegree('a'))
+print(G.get_VInOut('a'))
+print(G.get_EInOut('a'))
+print(G.add_vertex('l'))
+print(G.remove_edge(10))
+
+print(G.remove_vertex('a'))
+
+
+
